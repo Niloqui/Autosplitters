@@ -1,8 +1,8 @@
 // version 2.1.0
 
 state("midtown2") {
-	//int loading_value : 0x1E0CCC;
-	int loading_value : 0x2B17C8;
+    //int loading_value : 0x1E0CCC;
+    int loading_value : 0x2B17C8;
     string256 message_on_screen : 0x22751C, 0xC, 0x20, 0x4, 0x30, 0x10;
 }
 
