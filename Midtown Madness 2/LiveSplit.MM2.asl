@@ -1,4 +1,4 @@
-// version 3.0.0
+// version 3.0.1
 
 state("midtown2") {
     //int loading_value : 0x1E0CCC;
@@ -17,7 +17,7 @@ state("midtown2") {
         value when not finishing 1st.
     6: Victory screen for all crash courses.
     
-    When loading I observed some other value saved in this variable:
+    When loading I observed some other values saved in this variable:
     353784856   '00010101000101100101010000011000'
     554262305   '00100001000010010101111100100001'
     1090524225  '01000001000000000001010001000001' : Very common
@@ -41,9 +41,7 @@ init {
 }
 
 start { // Start the timer
-    if(current.loading_value==1)
-        return true;
-    return false;
+    return current.loading_value == 1;
 }
 
 isLoading {
