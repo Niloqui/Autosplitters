@@ -1,9 +1,10 @@
-// version 3.0.1
+// version 3.0.2
 
 state("midtown2") {
     //int loading_value : 0x1E0CCC;
     int loading_value : 0x2B17C8;
-    int race_state : 0x1B65AC, 0x518;
+    int race_state : 0x227510, 0x3C, 0x8, 0xC, 0xC8, 0x270;
+    // int race_state : 0x1B65AC, 0x518;
     //string256 message_on_screen : 0x22751C, 0xC, 0x20, 0x4, 0x30, 0x10;
 }
 
